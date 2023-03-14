@@ -1,0 +1,70 @@
+<html lang="pt-BR">
+<%- include("./partials/head.ejs") %>
+
+<body>
+  <%- include("./partials/nav.ejs") %>
+
+  <div class="create-blog content">
+    <form action="/ifads" method="POST">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+      <br>
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+      <br>
+      <label for="cidade">Cidade:</label>
+      <input type="text" id="cidade" name="cidade" required>
+      <br>
+      <label for="trabalha">Trabalha na área?</label>
+      <input type="text" id="trabalha" name="trabalha" required></input type="text">
+      <br>
+      <label for="senha">Senha</label>
+      <input type="password" id="senha" name="senha" required>
+      <br>
+      <label for="datanasc">Data de nascimento</label>
+      <input type="date" id="datanasc" name="datanasc" required>
+      <br>
+      <label for="prontuario">Prontuário</label>
+      <input type="text" id="prontuario" name="prontuario" required></input type="text">
+      <br>
+      <label for="trabalhaoque">Se respondeu sim, trabalha com que?</label>
+      <input type="text" id="trabalhaoque" name="trabalhaoque"></input type="text">
+      <br>
+      <label for="dificuldade">Se não, qual maior dificuldade?</label>
+      <input type="text" id="dificuldade" name="dificuldade"></input type="text">
+      <br>
+      <label for="areasinteresse">Quais são suas áreas de interesse no TI?</label>
+      <input type="text" id="areasinteresse" name="areasinteresse" required></input type="text">
+      <br>
+      <label for="conhecercurso">Você já conhecia o curso de análise e desenvolvimento de sistemas?</label>
+      <input type="text" id="conhecercurso" name="conhecercurso" required></input type="text">
+      <br>
+      <label for="cursotec">Já fez algum curso técnico ou complementar de informática?</label>
+      <input type="text" id="cursotec" name="cursotec" required></input type="text">
+      <br>
+      <label for="gostando">Está gostando do curso de ADS?</label>
+      <input type="text" id="gostando" name="gostando" required></input type="text">
+      <br>
+      <label for="gostandotrue">Se sim, o que você mais gosta do curso?</label>
+      <input type="text" id="gostandotrue" name="gostandotrue"></input type="text">
+      <br>
+      <label for="gostandofalse">Se não, o que você melhoraria no curso de ADS?</label>
+      <input type="text" id="gostandofalse" name="gostandofalse"></input type="text">
+      <br>
+      <label for="sugestao">O que você melhoraria no curso de ADS?</label>
+      <input type="text" id="sugestao" name="sugestao" required></input type="text">
+      <br>
+      <label for="amparado">Você se sente amparado pela faculdade, quando se trata da sua carreira?</label>
+      <input type="text" id="amparado" name="amparado" required></input type="text">
+      <br>
+      <label for="encaminhar">Como você acha que a faculdade poderia encaminhar os alunos para o mercado de trabalho?</label>
+      <input type="text" id="encaminhar" name="encaminhar" required></input type="text">
+      <br>
+      <br>
+      <button>Enviar</button>
+    </form>
+  </div>
+
+  <%- include("./partials/footer.ejs") %>
+</body>
+</html>
