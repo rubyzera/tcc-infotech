@@ -37,14 +37,6 @@ const pessoastiSchema = new Schema({ // Criando o banco "pessoasti" e especifica
     resumotrabalho: {
         type: String,
         required: true
-    },
-    dificuldade: {
-        type: String,
-        required: true
-    },
-    oquediria: {
-        type: String,
-        required: true
     }
 }, { timestamps: true });//Ao final foi usada a função "timestamps" para salvar a data de quando o banco foi feito
 

@@ -45,38 +45,7 @@ const ifadsSchema = new Schema({ // Criando o banco "ifads" e especificando os t
     areasinteresse: {
         type: String,
         required: true
-    },
-    conhecercurso: {
-        type: Boolean,
-        required: true
-    },
-    cursotec: {
-        type: Boolean,
-        required: true
-    },
-    gostando: {
-        type: Boolean,
-        required: true
-    },
-    gostandotrue: {
-        type: String,
-        required: false
-    },
-    gostandofalse: {
-        type: String,
-        required: false
-    },
-    sugestao: {
-        type: String,
-        required: true
-    },
-    amparado: {
-        type: Boolean,
-        required: true
-    },
-    encaminhar: {
-        type: String,
-        required: true
+    
     }
 }, { timestamps: true });//Ao final foi usada a função "timestamps" para salvar a data de quando o banco foi feito
 

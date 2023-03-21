@@ -45,6 +45,14 @@ app.get('/blogs/registropessoasti', (req, res) => {
   res.render('registropessoasti', { title: 'Registrar pessoas que já trabalham com TI' });
 });
 
+app.get('/loginifads', (req, res) => {
+  res.render('loginifads', { title: 'Login para Alunos IFSP' });
+});
+
+app.get('/loginpessoasti', (req, res) => {
+  res.render('loginpessoasti', { title: 'Login para profissionais' });
+});
+
 app.get('/blogs', (req, res) => {
   Blog.find().sort({ createdAt: -1 })
     .then(result => {
