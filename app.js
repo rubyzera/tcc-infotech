@@ -49,6 +49,10 @@ app.get('/loginifads', (req, res) => {
   res.render('loginifads', { title: 'Login para Alunos IFSP' });
 });
 
+app.get('/empresa', (req,res) => {
+  res.render('registroempresa', { title: 'Registro de vaga para empresas'});
+});
+
 app.get('/loginpessoasti', (req, res) => {
   res.render('loginpessoasti', { title: 'Login para profissionais' });
 });

@@ -1,0 +1,39 @@
+<html lang="pt-BR">
+<%- include("./partials/head.ejs") %>
+
+<body>
+  <%- include("./partials/nav.ejs") %>
+
+  <div class="create-blog content">
+    <form action="/empresa" method="POST">
+      <label for="nome">Nome (Razão Social):</label>
+      <input type="text" id="nome" name="nome" required>
+      <br>
+      <label for="cnpj">CNPJ</label>
+      <input type="text" id="cnpj" name="cnpj" required>
+      <br>
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+      <br>
+      <label for="telefone">Telefone:</label>
+      <input type="text" id="telefone" name="telefone" required>
+      <br>
+      <label for="cidade">Endereço:</label>
+      <input type="text" id="endereco" name="endereco" required>
+      <br>
+      <label for="trabalha">Área de atividade:</label>
+      <input type="text" id="area" name="area" required></input type="text">
+      <br>
+      <label for="buscando">O que está buscando?</label>
+      <input type="text" id="buscando" name="buscando" required>
+      <br>
+      <label for="vaga">Cadastro da vaga ofertada</label>
+      <textarea id="vaga" name="vaga" required></textarea>
+      <br>
+      <button>Enviar</button>
+    </form>
+  </div>
+
+  <%- include("./partials/footer.ejs") %>
+</body>
+</html>
