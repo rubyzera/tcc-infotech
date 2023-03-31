@@ -65,6 +65,10 @@ app.get('/areas', (req, res) => {
   res.render('areas', { title : 'Áreas de TI' });
 });
 
+app.get('/cursos', (req, res) => {
+  res.render('cursos', { title: 'Cursos Gratuitos' });
+});
+
 app.get('/blogs', (req, res) => {
   Blog.find().sort({ createdAt: -1 })
     .then(result => {
