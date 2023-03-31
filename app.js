@@ -61,6 +61,10 @@ app.get('/loginempresa', (req, res) => {
   res.render('loginempresa', { title: 'Login para empresas' });
 });
 
+app.get('/areas', (req, res) => {
+  res.render('areas', { title : 'Áreas de TI' });
+});
+
 app.get('/blogs', (req, res) => {
   Blog.find().sort({ createdAt: -1 })
     .then(result => {
