@@ -13,6 +13,10 @@ const empresaSchema = new Schema({
   email: {
     type: String,
     required: true
+  },
+  senha: {
+    type: String,
+    required:true
   },  
   telefone: {
     type: Number,
@@ -32,7 +36,7 @@ const empresaSchema = new Schema({
   },
   vaga: {
     type: String,
-    required: true
+    required: false
   },
 }, { timestamps: true });
 

@@ -57,6 +57,10 @@ app.get('/loginpessoasti', (req, res) => {
   res.render('loginpessoasti', { title: 'Login para profissionais' });
 });
 
+app.get('/loginempresa', (req, res) => {
+  res.render('loginempresa', { title: 'Login para empresas' });
+});
+
 app.get('/blogs', (req, res) => {
   Blog.find().sort({ createdAt: -1 })
     .then(result => {
